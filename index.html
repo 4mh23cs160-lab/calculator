@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="calculator" role="application" aria-label="Calculator">
+    <div class="display" aria-live="polite">
+      <div class="history" id="history">&nbsp;</div>
+      <div class="current" id="current">0</div>
+    </div>
+    <div class="keys">
+      <button type="button" class="btn-clear" id="clear">C</button>
+      <button type="button" id="backspace">⌫</button>
+      <button type="button" class="btn-operator" data-value="%">%</button>
+      <button type="button" class="btn-operator" data-value="/">÷</button>
+      <button type="button" class="btn-operator" data-value="(">(</button>
+      <button type="button" class="btn-operator" data-value=")">)</button>
+      <button type="button" class="btn-operator" data-value="^">^</button>
+      <button type="button" class="btn-operator" data-value="*">×</button>
+      <button type="button" class="btn-digit" data-value="7">7</button>
+      <button type="button" class="btn-digit" data-value="8">8</button>
+      <button type="button" class="btn-digit" data-value="9">9</button>
+      <button type="button" class="btn-operator" data-value="-">−</button>
+      <button type="button" class="btn-digit" data-value="4">4</button>
+      <button type="button" class="btn-digit" data-value="5">5</button>
+      <button type="button" class="btn-digit" data-value="6">6</button>
+      <button type="button" class="btn-operator" data-value="+">+</button>
+      <button type="button" class="btn-digit" data-value="1">1</button>
+      <button type="button" class="btn-digit" data-value="2">2</button>
+      <button type="button" class="btn-digit" data-value="3">3</button>
+      <button type="button" class="btn-big btn-digit" data-value="0">0</button>
+      <button type="button" class="btn-decimal" data-value=".">.</button>
+      <button type="button" class="btn-sign" id="sign">±</button>
+      <button type="button" class="btn-equals" id="equals">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
